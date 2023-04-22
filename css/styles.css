@@ -46,7 +46,7 @@ body {
   margin-right: auto;
   width: 1158px;
   padding: 0 15px;
-  }
+}
 
 h1,
 h2,
@@ -149,6 +149,10 @@ button {
   background-color: var(--pressed-state);
 }
 
+.current {
+  color: var(--pressed-state);
+}
+
 .nav-link.link {
   padding: 24px 0;
 }
@@ -234,6 +238,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   margin-left: auto;
   margin-right: auto;
 }
+
 .hero-button,
 .batton {
   display: block;
@@ -330,11 +335,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
-  
-
 }
-
 .statement-item.strategy::before {
   background-image: url(../images/studio/originals/antenna.svg);
   background-position: center;
@@ -359,6 +360,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   background-size: 64px 64px;
   padding: 24px 100px;
 } */
+
 .container-list .statement-item:nth-child(4n) {
   margin-right: 0;
 }
@@ -416,14 +418,9 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 }
 
   .social-item {
-/* display: flex;
-justify-content: center;
-align-items: center; */
-width: 40px;
-height: 40px;
-/* background-color: var(--primary-brand);
-border-radius: 50%; */
-  }
+  width: 40px;
+  height: 40px;
+}
 
 .social-link {
   display: flex;
@@ -433,13 +430,13 @@ border-radius: 50%; */
   height: 100%;
   border-radius: 50%;
   background-color: var(--primary-brand);
-  transition: background-color 250ms var(--cubic), fill 250ms var(--cubic);
+  transition: background-color 250ms var(--cubic);
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--pressed-state);
-  fill: var(--light);
+  /* fill: var(--light); */
 }
 .social-icon {
   fill: var(--light);
@@ -482,14 +479,13 @@ border-radius: 50%; */
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* color: var(--subtle-text); */
+  color: var(--subtle-text);
   border: 1px solid var(--subtle-text);
   border-radius: 4px;
   width: 100%;
   height: 100%;
-  color: var(--customers-icon);
-  transition: fill 250ms var(--cubic),
-  color 250ms var(--cubic),
+  
+  transition: color 250ms var(--cubic),
   border-color 250ms var(--cubic);
 }
 
@@ -497,8 +493,8 @@ border-radius: 50%; */
 .customers-link:focus {
   border-color: var(--pressed-state);
   color: var(--pressed-state);
-  fill: var(--pressed-state);
 }
+
 /* .customers-logo:hover,
 .customers-logo:focus {
   fill: var(--pressed-state);
@@ -506,7 +502,6 @@ border-radius: 50%; */
 
 .customers-logo {
   fill: currentColor;;
-  margin: 16px 32px;
 }
 
 .customers-list {
@@ -555,7 +550,7 @@ border-radius: 50%; */
   transition: background-color 250ms var(--cubic),
   color 250ms var(--cubic),
   box-shadow 250ms var(--cubic);
- }
+}
 
 .filter-button:hover,
 .filter-button:focus {
@@ -565,7 +560,6 @@ border-radius: 50%; */
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
   0px 2px 1px rgba(0, 0, 0, 0.08),
   0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 /* Portfolio Main */
@@ -673,10 +667,6 @@ border-radius: 50%; */
   margin-left: auto;
 }
 
-/* .footer-logo-block {
-  margin-right: 120px;
- } */
-
 .footer,
 .footer-text,
 .footer-studio {
@@ -727,12 +717,9 @@ border-radius: 50%; */
   text-decoration: none;
 }
 
-/* .social-media {
-  padding-bottom: 16px;
-} */
-
 .social.media-list {
   gap: 16px;
+  margin-top: 0;
 }
 .social-item {
   transition: background-color 250ms var(--cubic);
@@ -763,7 +750,8 @@ border-radius: 50%; */
   right: 0;
   bottom: 0;
   background: var(--modal-bgc);
-  transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
+  transition: opacity 250ms var(--cubic),
+  visibility 250ms var(--cubic);
 }
 
 .is-hidden {
@@ -775,29 +763,32 @@ border-radius: 50%; */
 .modal {
   width: 408px;
   min-height: 576px;
-  margin-top: 88px;
+ 
   padding: 24px;
   position: absolute;
-  
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 
   background: var(--modal-background);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
 .modal-btn {
-  display: block;
-  margin-left: auto; 
-  border: none;
+  position: absolute;
+  right: 24px;
+  top: 24px;
   padding: 0;
   width: 24px;
   height: 24px;
 
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: fill 250ms var(--cubic), background-color 250ms var(--cubic) ;
+  transition: fill 250ms var(--cubic),
+  background-color 250ms var(--cubic) ;
 }
 
 .modal-icon {
