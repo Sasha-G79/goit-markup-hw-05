@@ -12,9 +12,9 @@
   --white-background: #ffffff;
   --modal-background: #fcfcfc;
   --box-shadow: rgba(0, 0, 0, 0.15);
-  --header-btm-border: #E7E9FC;
-  --portfolio-bottons: #E7E9FC;
-  --footer-social: #31D0AA;
+  --header-btm-border: #e7e9fc;
+  --portfolio-bottons: #e7e9fc;
+  --footer-social: #31d0aa;
   --customers-icon: #afb1b8;
   --modal-bgc: rgba(46, 47, 66, 0.4);
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
@@ -38,7 +38,7 @@
 body {
   color: var(--text);
   background-color: var(--white-background);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -65,7 +65,9 @@ ul {
   text-decoration: none;
 }
 
-img {display: block;}
+img {
+  display: block;
+}
 
 .section-list,
 .list {
@@ -82,19 +84,17 @@ button {
 
 /* Reset End */
 
-
 /* Header */
 .header {
   border-bottom: 1px solid var(--header-btm-border);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16),
-  0px 1px 6px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .logo.link {
   /* Studio */
 
   color: var(--primary-brand);
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -110,7 +110,7 @@ button {
 
 .studio {
   color: var(--dark);
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -136,14 +136,14 @@ button {
 }
 
 .nav-link::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   bottom: -1px;
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  }
+}
 
 .nav-link.current::after {
   background-color: var(--pressed-state);
@@ -163,7 +163,8 @@ button {
   color: var(--pressed-state);
 }
 
-.main-nav, .nav {
+.main-nav,
+.nav {
   display: flex;
   align-items: center;
 }
@@ -174,15 +175,13 @@ button {
 }
 
 .address {
-  margin-left: auto;;
+  margin-left: auto;
 }
 
 .site-nav {
   display: flex;
   gap: 40px;
 }
-
-
 
 .auth-nav {
   display: flex;
@@ -209,9 +208,11 @@ button {
 /* Hero */
 
 .hero {
-background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-  rgba(46, 47, 66, 0.7)),
-  url(../images/studio/people-office.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/studio/people-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -219,7 +220,6 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   min-height: 600px;
   margin-left: auto;
   margin-right: auto;
-
 
   background-color: var(--hero-background);
   text-align: center;
@@ -248,7 +248,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   background-color: var(--primary-brand);
   color: var(--white-background);
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -273,7 +273,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 .section {
   color: var(--dark);
   padding-bottom: 120px;
-  }
+}
 
 .section.one {
   padding-top: 120px;
@@ -409,7 +409,6 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   border-radius: 0px 0px 4px 4px;
 }
 
-
 .social {
   display: flex;
   justify-content: center;
@@ -417,7 +416,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   margin-top: 8px;
 }
 
-  .social-item {
+.social-item {
   width: 40px;
   height: 40px;
 }
@@ -442,8 +441,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   fill: var(--light);
   display: flex;
   align-items: center;
-  }
-
+}
 
 .staff-role,
 .team {
@@ -458,8 +456,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   display: inline-block;
   width: 264px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16),
-  0px 2px 1px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -484,9 +481,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   border-radius: 4px;
   width: 100%;
   height: 100%;
-  
-  transition: color 250ms var(--cubic),
-  border-color 250ms var(--cubic);
+
+  transition: color 250ms var(--cubic), border-color 250ms var(--cubic);
 }
 
 .customers-link:hover,
@@ -501,7 +497,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 } */
 
 .customers-logo {
-  fill: currentColor;;
+  fill: currentColor;
 }
 
 .customers-list {
@@ -532,7 +528,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 }
 
 .filter-button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -547,9 +543,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   border-radius: 4px;
 
   padding: 12px 24px;
-  transition: background-color 250ms var(--cubic),
-  color 250ms var(--cubic),
-  box-shadow 250ms var(--cubic);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
 }
 
 .filter-button:hover,
@@ -557,9 +552,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   background-color: var(--pressed-state);
   color: var(--white-background);
   border: 1px solid transparent;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-  0px 2px 1px rgba(0, 0, 0, 0.08),
-  0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Portfolio Main */
@@ -587,8 +581,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 .portfolio .link:focus,
 .portfolio .link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16),
-  0px 2px 1px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card-top {
@@ -596,7 +589,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   overflow: hidden;
 }
 
-.card-img {}
+/* .card-img {
+} */
 
 .overlay {
   position: absolute;
@@ -606,7 +600,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   left: 0;
   background-color: var(--primary-brand);
   color: var(--light);
-  
+
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -622,7 +616,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 .portfolio .link:focus .overlay,
 .portfolio .link:hover .overlay {
   transform: translateY(0);
-} 
+}
 
 .overlay-text {
   position: absolute;
@@ -697,7 +691,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   /* Studio */
   display: inline-block;
   color: var(--primary-brand);
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -705,7 +699,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  margin-bottom: 16px;;
+  margin-bottom: 16px;
 }
 
 .container.footer-box {
@@ -746,12 +740,11 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 .backdrop {
   position: fixed;
   top: 0;
-  left: 0; 
+  left: 0;
   right: 0;
   bottom: 0;
   background: var(--modal-bgc);
-  transition: opacity 250ms var(--cubic),
-  visibility 250ms var(--cubic);
+  transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
 }
 
 .is-hidden {
@@ -763,7 +756,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 .modal {
   width: 408px;
   min-height: 576px;
- 
+
   padding: 24px;
   position: absolute;
   top: 50%;
@@ -771,9 +764,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   transform: translate(-50%, -50%);
 
   background: var(--modal-background);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 1px 3px rgba(0, 0, 0, 0.12),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
@@ -787,8 +779,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: fill 250ms var(--cubic),
-  background-color 250ms var(--cubic) ;
+  transition: fill 250ms var(--cubic), background-color 250ms var(--cubic);
 }
 
 .modal-icon {
